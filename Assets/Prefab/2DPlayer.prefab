@@ -460,6 +460,36 @@ Transform:
   m_Father: {fileID: 1168120066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2988232349487762275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3682936194887475135}
+  m_Layer: 0
+  m_Name: PlayerCameraRoot (1)
+  m_TagString: CinemachineTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3682936194887475135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2988232349487762275}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.20000458, y: -6, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 7097499646609264888}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7097499646609264889
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +518,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3682936194887475135}
   - {fileID: 7097499646726471475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -613,8 +644,8 @@ MonoBehaviour:
   - {fileID: 1168120066}
   - {fileID: 2085603194}
   m_Bounds:
-    m_Center: {x: 0.0071223974, y: -0.0029711723, z: 0}
-    m_Extent: {x: 1.2266238, y: 3.1540508, z: 0}
+    m_Center: {x: 0.0071299076, y: -0.0029711723, z: 0}
+    m_Extent: {x: 1.2266241, y: 3.1540508, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7097499646726471500
@@ -650,7 +681,7 @@ Transform:
   - {fileID: 7097499648348880429}
   - {fileID: 7097499647854700742}
   m_Father: {fileID: 7097499646609264888}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7097499646933296771
 GameObject:
@@ -785,8 +816,8 @@ MonoBehaviour:
   - {fileID: 169864161}
   - {fileID: 527129125}
   m_Bounds:
-    m_Center: {x: 0.005285859, y: 0.016719818, z: 0}
-    m_Extent: {x: 1.2303296, y: 3.1692324, z: 0}
+    m_Center: {x: 0.00529325, y: 0.016719103, z: 0}
+    m_Extent: {x: 1.2303296, y: 3.1692326, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7097499647665067216
@@ -891,8 +922,8 @@ MonoBehaviour:
   - {fileID: 630607549}
   - {fileID: 2005817636}
   m_Bounds:
-    m_Center: {x: 0.01658845, y: 0.008270979, z: 0}
-    m_Extent: {x: 1.4122891, y: 3.7229588, z: 0}
+    m_Center: {x: 0.01659584, y: 0.008270025, z: 0}
+    m_Extent: {x: 1.4122887, y: 3.72296, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7097499647716323509
@@ -1028,8 +1059,8 @@ MonoBehaviour:
   - {fileID: 676870481}
   - {fileID: 419649877}
   m_Bounds:
-    m_Center: {x: 0.006542325, y: 0.007876873, z: 0}
-    m_Extent: {x: 1.9980311, y: 4.0441265, z: 0}
+    m_Center: {x: 0.006542325, y: 0.007876396, z: 0}
+    m_Extent: {x: 1.9980313, y: 4.0441256, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7097499647854700743
@@ -1196,7 +1227,7 @@ MonoBehaviour:
   - {fileID: 2007500078}
   - {fileID: 1760655650}
   m_Bounds:
-    m_Center: {x: 0.017652154, y: 0.004493475, z: 0}
-    m_Extent: {x: 1.36548, y: 3.67635, z: 0}
+    m_Center: {x: 0.017650962, y: 0.004493475, z: 0}
+    m_Extent: {x: 1.3654728, y: 3.6763496, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
