@@ -264,11 +264,6 @@ Transform:
   m_Father: {fileID: 34948176}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &132257042 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8338988566280778637, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
-  m_PrefabInstance: {fileID: 794970430}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &148118950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,7 +1545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345481936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000027656555, y: -0.19999987, z: 0.0000009536743}
+  m_LocalPosition: {x: 0.000031471252, y: -0.19999993, z: 0.0000009536743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1287096090}
@@ -1576,7 +1571,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 132257042}
+  m_Follow: {fileID: 868122230}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
@@ -2154,8 +2149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
-  SprintSpeed: 3
+  MoveSpeed: 1
+  SprintSpeed: 4
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
@@ -2180,7 +2175,7 @@ MonoBehaviour:
   GroundedRadius: 0.3
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 73
   CinemachineCameraTarget: {fileID: 868122229}
   TopClamp: 340
   BottomClamp: -130
@@ -5437,11 +5432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: TopClamp
       value: 340
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: JumpHeight
@@ -6604,13 +6603,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7097499646609264889, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097499646609264889, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097499646726471475, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097499646726471475, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097499646726471475, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
 --- !u!1 &868122229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2988232349487762275, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
+  m_PrefabInstance: {fileID: 868122228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &868122230 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3682936194887475135, guid: 923120d613ad8ef4abce5ab236bc9391, type: 3}
   m_PrefabInstance: {fileID: 868122228}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &868210083
@@ -7730,7 +7750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e10141322700b47b2c6e828bddb9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 132257042}
+  playerTransform: {fileID: 868122230}
 --- !u!81 &1065673915
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7790,7 +7810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065673913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.060028, y: 0.49999988, z: -15.000001}
+  m_LocalPosition: {x: -12.040031, y: 0.49999988, z: -15.000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 345481937}
